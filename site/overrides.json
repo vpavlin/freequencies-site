@@ -1,0 +1,25 @@
+{
+  "loam_core": {
+    "repo": "https://github.com/vpavlin/loam-basecamp",
+    "website": "https://vpavlin.github.io/loam/"
+  },
+  "delivery_module": {
+    "repo": "https://github.com/vpavlin/logos-shared-delivery"
+  },
+  "scala": {
+    "repo": "https://github.com/vpavlin/scala",
+    "website": "https://vpavlin.github.io/scala/"
+  },
+  "scala_ui": {
+    "featured": true,
+    "repo": "https://github.com/vpavlin/scala",
+    "website": "https://vpavlin.github.io/scala/"
+  },
+  "xyz.vpavlin.scala": {
+    "featured": true,
+    "website": "https://vpavlin.github.io/scala/"
+  },
+  "loam_ui": {
+    "repo": "https://github.com/vpavlin/loam-basecamp"
+  }
+}

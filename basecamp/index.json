@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 2,
+  "repositoryName": "frequencies",
+  "generatedAt": "2026-10-09T07:09:39Z",
+  "packages": [
+    {
+      "name": "scala",
+      "versions": [
+        {
+          "releasedAt": "2026-10-07T10:04:48Z",
+          "publisherRef": "scala-v0.11.0",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala-v0.11.0/scala-0.11.0.lgx",
+          "size": 13792101,
+          "sha256": "67d2fdc3ce0a77ecf7e563ecf8015c9b7b33e4a242f884b00eda5226934ae45b",
+          "rootHash": "33109aa80b980e4068c609447821e19b371f9bd772bc27657375b8b678f36ee9",
+          "manifest": {
+            "author": "",
+            "category": "general",
+            "dependencies": [
+              "loam_core",
+              "storage_module"
+            ],
+            "description": "Secure Calendar App \u2014 privacy-first shared calendar module for Logos Core",
+            "display_name": "Scala Core",
+            "hashes": {
+              "assets": "f2942b3eacebc8bd3f63ba39097991f7fe42ef44fee2e5fd34ccae99ecba1a70",
+              "root": "33109aa80b980e4068c609447821e19b371f9bd772bc27657375b8b678f36ee9",
+              "variants": "2ba0b7f954f1e10b35036ceec81b6a2f205c6d8c6086ce43685aa34cf2b1cf7f",
+              "variants/darwin-arm64": "c80ee0a9665076b9f7787e501d9341769f318227379ce2e26d909e9f054a18c5",
+              "variants/linux-amd64": "96afb2e0715c84762e2e057bc5679d78ca17971865eeca1408fdd14bb1ecd64d",
+              "variants/linux-arm64": "a4382be8390960f2ed8fa08086c3dfe902afb2c54efb29aacdf5a08c026754b9"
+            },
+            "icon": "assets/icon.png",
+            "main": {
+              "darwin-arm64": "scala_plugin.dylib",
+              "linux-amd64": "scala_plugin.so",
+              "linux-arm64": "scala_plugin.so"
+            },
+            "manifestVersion": "0.6.0",
+            "name": "scala",
+            "type": "core",
+            "version": "0.11.0"
+          },
+          "icon": {
+            "path": "ec61e5bd8d2f52c73fafbd2e232312b344ad7fd5515450df305597dc6ad87568.png",
+            "sha256": "ec61e5bd8d2f52c73fafbd2e232312b344ad7fd5515450df305597dc6ad87568",
+            "size": 12132
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala-v0.11.0/scala-0.11.0.lgx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scala_ui",
+      "versions": [
+        {
+          "releasedAt": "2026-10-07T10:04:53Z",
+          "publisherRef": "scala_ui-v0.10.0",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala_ui-v0.10.0/scala_ui-0.10.0.lgx",
+          "size": 161769,
+          "sha256": "6a5815195c64ba2f77fcf8d04fa8615f8d5a70a9ed386f510976b5f778f4f9b1",
+          "rootHash": "bb4b66d074b5c1b40dce580de42961af81ef3d82adbaf521bf55382fd6ff9e99",
+          "manifest": {
+            "author": "",
+            "category": "general",
+            "dependencies": [
+              "scala",
+              "loam_core"
+            ],
+            "description": "Scala Calendar UI - pure-QML view over the scala calendar core module",
+            "display_name": "Scala",
+            "hashes": {
+              "assets": "ec7137e8bc2833d69d7a19de9177aa3e7a903b6b77af4b84e029b9ad9f722236",
+              "root": "bb4b66d074b5c1b40dce580de42961af81ef3d82adbaf521bf55382fd6ff9e99",
+              "variants": "5362ebbe74fbdc23610979a3150157aab5e23612e24e4f6d1afee699624f59db",
+              "variants/darwin-arm64": "420d4239fbdecfbba4df50ec52e1b45e369e376c37f4b1583f4a40641fd8a979",
+              "variants/linux-amd64": "420d4239fbdecfbba4df50ec52e1b45e369e376c37f4b1583f4a40641fd8a979",
+              "variants/linux-arm64": "420d4239fbdecfbba4df50ec52e1b45e369e376c37f4b1583f4a40641fd8a979"
+            },
+            "icon": "assets/icon.png",
+            "main": {},
+            "manifestVersion": "0.6.0",
+            "name": "scala_ui",
+            "type": "ui_qml",
+            "version": "0.10.0",
+            "view": "qml/CalendarView.qml"
+          },
+          "icon": {
+            "path": "ec61e5bd8d2f52c73fafbd2e232312b344ad7fd5515450df305597dc6ad87568.png",
+            "sha256": "ec61e5bd8d2f52c73fafbd2e232312b344ad7fd5515450df305597dc6ad87568",
+            "size": 12132
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala_ui-v0.10.0/scala_ui-0.10.0.lgx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loam_core",
+      "versions": [
+        {
+          "releasedAt": "2026-10-07T10:00:05Z",
+          "publisherRef": "loam_core-v0.6.1",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/loam_core-v0.6.1/loam_core-0.6.1.lgx",
+          "size": 13166601,
+          "sha256": "f48bcd7587fbf8e9efcf12e535ae7e4ccfc5d25e9e6b665033b8e63f874147e4",
+          "rootHash": "13abb07890ec104479894b97c98d34aa1807384b4d200c8368ab8a48f3fa002f",
+          "manifest": {
+            "author": "",
+            "category": "system",
+            "dependencies": [
+              "delivery_module",
+              "ble_mesh",
+              "keycard"
+            ],
+            "description": "Loam transport facade: one stable, bearer-agnostic API over the Logos delivery node (and later ble_mesh or lora). Apps depend on loam_core and call start/join/sendSealed/received while loam_core fans out to every bearer and dedups. See ADR 0015.",
+            "hashes": {
+              "assets": "f0c445a7c7e9f8d26e5247c6b35b35f08a058c7b0659dd59d3138d05f3cc5855",
+              "root": "13abb07890ec104479894b97c98d34aa1807384b4d200c8368ab8a48f3fa002f",
+              "variants": "9a46b482007fa85ae65865556c1882d4015dd2140f5ea22a0bf1afb55c2fef9a",
+              "variants/darwin-arm64": "c68e6a4139cde396ecc7a8eae98548c3632c7d2915511083d86e4e6d07a3c90d",
+              "variants/linux-amd64": "556efff0cd7dfece0a243f082ace6255d242e667771552e73166278239e7e275",
+              "variants/linux-arm64": "79c9aa35ad78108ee22f13d90af59b00a6a451da519643b0c24f89c9676d73ee"
+            },
+            "icon": "",
+            "main": {
+              "darwin-arm64": "loam_core_plugin.dylib",
+              "linux-amd64": "loam_core_plugin.so",
+              "linux-arm64": "loam_core_plugin.so"
+            },
+            "manifestVersion": "0.6.0",
+            "name": "loam_core",
+            "type": "core",
+            "version": "0.6.1"
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/loam_core-v0.6.1/loam_core-0.6.1.lgx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loam_ui",
+      "versions": [
+        {
+          "releasedAt": "2026-10-07T10:00:10Z",
+          "publisherRef": "loam_ui-v0.3.0",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/loam_ui-v0.3.0/loam_ui-0.3.0.lgx",
+          "size": 89988,
+          "sha256": "10fce987f2f1efc96515972b097f3c5ed97930a3066a33b796f811baec232594",
+          "rootHash": "f1aa4138c760811637eb92a110f44bb622cee4118ab7f7210d36974e888f9e8e",
+          "manifest": {
+            "author": "",
+            "category": "",
+            "dependencies": [
+              "loam_core"
+            ],
+            "description": "Loam control panel: live per-bearer metrics and controls (enable, priority, force-mesh, node mode) over loam_core.",
+            "hashes": {
+              "assets": "eb783640a5a46aa59e5e83c3f488ff6c4ab179594d8a08cf01301be46c37f796",
+              "root": "f1aa4138c760811637eb92a110f44bb622cee4118ab7f7210d36974e888f9e8e",
+              "variants": "29a2fa8aa5db2522e714334c56c4c4534356d4bba908a3d79b9f0d19a5eaab5f",
+              "variants/darwin-arm64": "f31977da687ed745abb7764283d56169f5490864d5a90ff29db84990cccba992",
+              "variants/linux-amd64": "f31977da687ed745abb7764283d56169f5490864d5a90ff29db84990cccba992",
+              "variants/linux-arm64": "f31977da687ed745abb7764283d56169f5490864d5a90ff29db84990cccba992"
+            },
+            "icon": "assets/icon.png",
+            "main": {},
+            "manifestVersion": "0.6.0",
+            "name": "loam_ui",
+            "type": "ui_qml",
+            "version": "0.3.0",
+            "view": "Main.qml"
+          },
+          "icon": {
+            "path": "a18dd6b72ddca4be1bb71126c0a516aa500b6c0be05ad27ed92125abe80e491b.png",
+            "sha256": "a18dd6b72ddca4be1bb71126c0a516aa500b6c0be05ad27ed92125abe80e491b",
+            "size": 18908
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/loam_ui-v0.3.0/loam_ui-0.3.0.lgx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "delivery_module",
+      "versions": [
+        {
+          "releasedAt": "2026-10-07T09:46:08Z",
+          "publisherRef": "delivery_module-v0.3.0",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/delivery_module-v0.3.0/delivery_module-0.3.0.lgx",
+          "size": 71667883,
+          "sha256": "8425fb06e725e19ec29af013ae5f1b7c6785ea776f96370242959194bb6ab195",
+          "rootHash": "0dfb36f4f458693de3d20b58d10cea06d02a09c6aa867bb4477408b4ed006e57",
+          "manifest": {
+            "author": "Logos Core Team",
+            "category": "protocol",
+            "dependencies": [],
+            "description": "Logos Delivery Module - High-level message-delivery API",
+            "display_name": "Delivery Module",
+            "hashes": {
+              "assets": "a3602a1565db855547034e5348661ea2f73dd7391768e270a63542bb6ec046bc",
+              "root": "0dfb36f4f458693de3d20b58d10cea06d02a09c6aa867bb4477408b4ed006e57",
+              "variants": "0dbfae29bd98be8008889db92396cc59b2a88868ec347a948d728b95f1ba277f",
+              "variants/darwin-arm64": "f31212de0e737082230d6d0469fcd6bb4c4d4e7da5377db77830c5701b135a82",
+              "variants/linux-amd64": "6f0d5cb3ba9fdcc327d795432497535f1f0cdd79bf0e9a148d446ccbfe68a9f3",
+              "variants/linux-arm64": "04ea3c4bb4759c1e7596ff5d27ed0de033ffacf94289ce6141bd7c5afce9d0b4"
+            },
+            "icon": "",
+            "main": {
+              "darwin-arm64": "delivery_module_plugin.dylib",
+              "linux-amd64": "delivery_module_plugin.so",
+              "linux-arm64": "delivery_module_plugin.so"
+            },
+            "manifestVersion": "0.6.0",
+            "name": "delivery_module",
+            "optional_dependencies": [
+              "libp2p_module",
+              "liblogos_rln_module"
+            ],
+            "type": "core",
+            "version": "0.3.0"
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/delivery_module-v0.3.0/delivery_module-0.3.0.lgx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ble_mesh",
+      "versions": [
+        {
+          "releasedAt": "2026-10-07T09:55:51Z",
+          "publisherRef": "ble_mesh-v0.2.1",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/ble_mesh-v0.2.1/ble_mesh-0.2.1.lgx",
+          "size": 13461485,
+          "sha256": "e7ce9e8ece965ae7d9e406e90d617315e091957cfd13b56ffc7d66efda5bec77",
+          "rootHash": "22e2208abdc2c7d21173f4963e9a69b9643ae82d2dc0c8353d52204ff33b6465",
+          "manifest": {
+            "author": "",
+            "category": "system",
+            "dependencies": [],
+            "description": "Loam BLE offline-mesh bearer: flood-gossip over Bluetooth, wire-compatible with the Android Loam mesh and loam-transport bearer.ts (same frame format and frameId). Depended on by loam_core (and any app) as a second bearer beside delivery. Portable gossip today, Qt Bluetooth radio in Phase 3. See ADR 0015.",
+            "hashes": {
+              "assets": "9d8e3e7dfe280868044d9eb8b027a50ea45754414ce24cc39fcaeda033ea1e86",
+              "root": "22e2208abdc2c7d21173f4963e9a69b9643ae82d2dc0c8353d52204ff33b6465",
+              "variants": "3ce80be59fc24eb0d00b1ad1042e05c214e262e0c4dc9dd8979635f78cf39a07",
+              "variants/darwin-arm64": "f88ce4c86853757cf971aa0263331796c4a791fb8002fa31508a2f1cef235cd8",
+              "variants/linux-amd64": "5a7bf156d6d690ad353c7a1af57648f685266c40840bb1373eabdcb53721ff51",
+              "variants/linux-arm64": "cd436f7cfb953f73e85c11cf583245dccfa563803ddf70fae7c2e9cdbed7607b"
+            },
+            "icon": "",
+            "main": {
+              "darwin-arm64": "ble_mesh_plugin.dylib",
+              "linux-amd64": "ble_mesh_plugin.so",
+              "linux-arm64": "ble_mesh_plugin.so"
+            },
+            "manifestVersion": "0.6.0",
+            "name": "ble_mesh",
+            "type": "core",
+            "version": "0.2.1"
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/ble_mesh-v0.2.1/ble_mesh-0.2.1.lgx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keycard",
+      "versions": [
+        {
+          "releasedAt": "2026-10-07T09:51:20Z",
+          "publisherRef": "keycard-v1.1.0",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/keycard-v1.1.0/keycard-1.1.0.lgx",
+          "size": 14046086,
+          "sha256": "d34a87a39b3e52ceebb0c3285a2208b686a8ed7d22313767b221c419079b3094",
+          "rootHash": "2d52f293e44145c634ac80deab4619f638dce38049178712f0109c4e29ebd45f",
+          "manifest": {
+            "author": "",
+            "category": "security",
+            "dependencies": [],
+            "description": "Keycard smartcard authentication module for Logos Basecamp",
+            "hashes": {
+              "assets": "2cbe525e230e40e709a8fd3ca1f93a92bd630895d78633a2024dd13e1cc7536e",
+              "root": "2d52f293e44145c634ac80deab4619f638dce38049178712f0109c4e29ebd45f",
+              "variants": "731ffad80c209a6084bde2afd3c2c57c55bcf2eeee4a55bf8437a3298c8dc8c2",
+              "variants/darwin-arm64": "de177e728e68ae9d67d59ccc4ff93afa41e5bea44d8a1f3dcb137434ddac0179",
+              "variants/linux-amd64": "f8680f9631e08a430f0d6dd87ec3b2c2935ad35b706f228db57e42c89143abdc",
+              "variants/linux-arm64": "6c2ddc9fb872c3acef621fbbd0abe2e68ff9095018b418f2475be86838e68ca7"
+            },
+            "icon": "",
+            "main": {
+              "darwin-arm64": "keycard_plugin.dylib",
+              "linux-amd64": "keycard_plugin.so",
+              "linux-arm64": "keycard_plugin.so"
+            },
+            "manifestVersion": "0.6.0",
+            "name": "keycard",
+            "type": "core",
+            "version": "1.1.0"
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/keycard-v1.1.0/keycard-1.1.0.lgx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keycard-ui",
+      "versions": [
+        {
+          "releasedAt": "2026-10-07T09:51:25Z",
+          "publisherRef": "keycard-ui-v1.1.0",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/keycard-ui-v1.1.0/keycard-ui-1.1.0.lgx",
+          "size": 64641,
+          "sha256": "b7bdca2557095afb95e582ee3ce041dd9ba77afbc9d63f3556d31162a4132f3f",
+          "rootHash": "7d248a9565835bc242256c7348b01f0043e299ed2a4150d7aa61ad097f63c0ad",
+          "manifest": {
+            "author": "",
+            "category": "security",
+            "dependencies": [
+              "keycard"
+            ],
+            "description": "Keycard debug UI and test harness",
+            "hashes": {
+              "assets": "acd82e7985faf580a81c346f942ead033d7d5bb078dda91919e43f085d70f566",
+              "root": "7d248a9565835bc242256c7348b01f0043e299ed2a4150d7aa61ad097f63c0ad",
+              "variants": "2d6dd1eabc9152b6372a03ee972215608331c5c96d2fb7ea7fa955372c767072",
+              "variants/darwin-arm64": "1207508e64acfaecc01c795cdc60322f2348f14a7d66c57c4e7c76a1ccc409bf",
+              "variants/linux-amd64": "1207508e64acfaecc01c795cdc60322f2348f14a7d66c57c4e7c76a1ccc409bf",
+              "variants/linux-arm64": "1207508e64acfaecc01c795cdc60322f2348f14a7d66c57c4e7c76a1ccc409bf"
+            },
+            "icon": "assets/icon.png",
+            "main": {},
+            "manifestVersion": "0.6.0",
+            "name": "keycard-ui",
+            "type": "ui_qml",
+            "version": "1.1.0",
+            "view": "qml/Main.qml"
+          },
+          "icon": {
+            "path": "e8f98d896166fb9f6c4866d7d711eb9918e9d65eaed322f205dca49435dc98a5.png",
+            "sha256": "e8f98d896166fb9f6c4866d7d711eb9918e9d65eaed322f205dca49435dc98a5",
+            "size": 2432
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/keycard-ui-v1.1.0/keycard-ui-1.1.0.lgx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "storage_module",
+      "versions": [
+        {
+          "releasedAt": "2026-10-01T09:49:00Z",
+          "publisherRef": "storage_module-v2.1.3",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/storage_module-v2.1.3/storage_module-2.1.3.lgx",
+          "size": 37764035,
+          "sha256": "7996d8b140dcd940e8c8325e99697a01fa26566d75a39e1d54fd60c7fe7053c0",
+          "rootHash": "8fde7220b8f26c57a28539317fe902a3769782b83cdde484cc5b0f89fb29e85e",
+          "manifest": {
+            "author": "Logos Core Team",
+            "category": "protocol",
+            "dependencies": [],
+            "description": "Storage module",
+            "display_name": "Storage Module",
+            "hashes": {
+              "assets": "e6efad4da67fc9264634c61f13357c6d1e468b1e02006685bfe83fda3dbc6478",
+              "root": "8fde7220b8f26c57a28539317fe902a3769782b83cdde484cc5b0f89fb29e85e",
+              "variants": "30a5942ce13c58a83cd44d3fd9dd1ede24041e92b799070820c69d882cfa860c",
+              "variants/darwin-arm64": "c5ded019339c40e75faf7a4df249e462d3a6bcbcbd63beadfafd7fa2a0c62c89",
+              "variants/linux-amd64": "199bf8b8932e997d9c7d619d3f22c60b8176f7f8d10efe4f18878fc6ea5120d4",
+              "variants/linux-arm64": "10d3a1aa2558ed531b8aa9b22a29ac86f43460fd226baffd2796b61c9d3e6e71"
+            },
+            "icon": "",
+            "main": {
+              "darwin-arm64": "storage_module_plugin.dylib",
+              "linux-amd64": "storage_module_plugin.so",
+              "linux-arm64": "storage_module_plugin.so"
+            },
+            "manifestVersion": "0.3.0",
+            "name": "storage_module",
+            "type": "core",
+            "version": "2.1.3"
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/storage_module-v2.1.3/storage_module-2.1.3.lgx"
+          ]
+        }
+      ]
+    }
+  ]
+}

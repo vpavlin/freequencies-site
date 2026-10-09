@@ -1,0 +1,79 @@
+name: Build site
+
+# frequencies.vpavlin.xyz: Scala only, for Android (F-Droid) and Basecamp.
+# basecamp/index.json and fdroid/repo come from scripts/sync.sh. The Basecamp
+# packages are downloaded by Basecamp straight from their GitHub release assets;
+# the APKs are copied here from apps.vpavlin.xyz and checked against the signed
+# index's sha256 before they are served.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache extracted module icons
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/logos-catalog-icons
+          key: lgx-icons-${{ hashFiles('basecamp/index.json') }}
+          restore-keys: lgx-icons-
+
+      - name: Assemble the site (page + F-Droid repo + Basecamp repo)
+        run: |
+          set -euo pipefail
+          FP=2373710A76ACB09F287F053E99E533F9D3685529C44E9027CDBC79B1DC0C9105
+          mkdir -p dist
+          cp -r fdroid dist/fdroid
+          cp -r basecamp dist/basecamp
+          cp logos-repo.json dist/logos-repo.json
+          # The APKs the signed index names, from apps.vpavlin.xyz, sha256-checked.
+          python3 - <<'PY'
+          import hashlib, json, urllib.request
+          idx = json.load(open("fdroid/repo/index-v2.json"))
+          for pkg in idx["packages"].values():
+              for v in pkg["versions"].values():
+                  name, want = v["file"]["name"].lstrip("/"), v["file"]["sha256"]
+                  data = urllib.request.urlopen(f"https://apps.vpavlin.xyz/fdroid/repo/{name}", timeout=300).read()
+                  got = hashlib.sha256(data).hexdigest()
+                  if got != want:
+                      raise SystemExit(f"{name}: sha256 {got} != index {want}")
+                  open(f"dist/fdroid/repo/{name}", "wb").write(data)
+                  print(f"  {name} ok ({len(data)} bytes)")
+          PY
+          python3 site/gen_modules_page.py \
+            --index basecamp/index.json \
+            --fdroid-index fdroid/repo/index-v2.json \
+            --fdroid-base  https://frequencies.vpavlin.xyz/fdroid/repo \
+            --fdroid-repo-url "https://frequencies.vpavlin.xyz/fdroid/repo?fingerprint=$FP" \
+            --overrides site/overrides.json \
+            --out dist/index.html
+          cp CNAME dist/CNAME
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deploy
+        uses: actions/deploy-pages@v4
