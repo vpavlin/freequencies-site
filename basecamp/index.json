@@ -1,18 +1,65 @@
 {
   "schemaVersion": 2,
   "repositoryName": "frequencies",
-  "generatedAt": "2026-10-09T07:09:39Z",
+  "generatedAt": "2026-10-10T18:28:01Z",
   "packages": [
+    {
+      "name": "frequencies_ui",
+      "versions": [
+        {
+          "releasedAt": "2026-10-10T18:28:01Z",
+          "publisherRef": "frequencies_ui-v0.3.0",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/frequencies_ui-v0.3.0/frequencies_ui-0.3.0.lgx",
+          "size": 80656,
+          "sha256": "724eca4b81cb7201429fda9fb0d764131c051387aa5541218bb7b083a249653f",
+          "rootHash": "0c7370227a9f9c6f3ed3ea7d355a515d2debf21b316fcf0885e8bc2f3ca66b0f",
+          "manifest": {
+            "author": "",
+            "category": "general",
+            "dependencies": [
+              "scala",
+              "kith",
+              "whisperbox_core"
+            ],
+            "description": "Frequencies: organise club nights on top of the Scala calendar: venues, status, line-up and fees with artists from Kith, booking/crew/guest-list forms from WhisperBox, comments",
+            "display_name": "Frequencies",
+            "hashes": {
+              "assets": "c7d459a5aefffd4829a54504283c7b292dcc6ea02c1677af42bde5f7f3c77ee6",
+              "root": "0c7370227a9f9c6f3ed3ea7d355a515d2debf21b316fcf0885e8bc2f3ca66b0f",
+              "variants": "36a71f9e814ef5ebdc8b05bdbbf2d4986e35fd7768e590b19f7ded256e98747b",
+              "variants/darwin-arm64": "93d00b82a34ce4cbc6df743800933c1606a57df9105c2e58f84e5f2c026ec7a7",
+              "variants/linux-amd64": "93d00b82a34ce4cbc6df743800933c1606a57df9105c2e58f84e5f2c026ec7a7",
+              "variants/linux-arm64": "93d00b82a34ce4cbc6df743800933c1606a57df9105c2e58f84e5f2c026ec7a7"
+            },
+            "icon": "assets/icon.png",
+            "main": {},
+            "manifestVersion": "0.6.0",
+            "name": "frequencies_ui",
+            "type": "ui_qml",
+            "version": "0.3.0",
+            "view": "qml/FrequenciesView.qml"
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/frequencies_ui-v0.3.0/frequencies_ui-0.3.0.lgx"
+          ],
+          "icon": {
+            "path": "f7c603cbac3e11142eac1d6486cd8f07aeaf838903112a11477036aad5788940.png",
+            "sha256": "f7c603cbac3e11142eac1d6486cd8f07aeaf838903112a11477036aad5788940",
+            "size": 7129
+          }
+        }
+      ]
+    },
     {
       "name": "scala",
       "versions": [
         {
-          "releasedAt": "2026-10-07T10:04:48Z",
-          "publisherRef": "scala-v0.11.0",
-          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala-v0.11.0/scala-0.11.0.lgx",
-          "size": 13792101,
-          "sha256": "67d2fdc3ce0a77ecf7e563ecf8015c9b7b33e4a242f884b00eda5226934ae45b",
-          "rootHash": "33109aa80b980e4068c609447821e19b371f9bd772bc27657375b8b678f36ee9",
+          "releasedAt": "2026-10-10T18:28:01Z",
+          "publisherRef": "scala-v0.12.2",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala-v0.12.2/scala-0.12.2.lgx",
+          "size": 13834218,
+          "sha256": "2a004d5c50d43ec564a1ca5bfcb44e47190c9c7fcafe239806988b5bbcc1877b",
+          "rootHash": "c5d97172bcc361edb62a0d62c0b087c49d396307ecebede3c61c2bee48ab2e57",
           "manifest": {
             "author": "",
             "category": "general",
@@ -23,12 +70,12 @@
             "description": "Secure Calendar App \u2014 privacy-first shared calendar module for Logos Core",
             "display_name": "Scala Core",
             "hashes": {
-              "assets": "f2942b3eacebc8bd3f63ba39097991f7fe42ef44fee2e5fd34ccae99ecba1a70",
-              "root": "33109aa80b980e4068c609447821e19b371f9bd772bc27657375b8b678f36ee9",
-              "variants": "2ba0b7f954f1e10b35036ceec81b6a2f205c6d8c6086ce43685aa34cf2b1cf7f",
-              "variants/darwin-arm64": "c80ee0a9665076b9f7787e501d9341769f318227379ce2e26d909e9f054a18c5",
-              "variants/linux-amd64": "96afb2e0715c84762e2e057bc5679d78ca17971865eeca1408fdd14bb1ecd64d",
-              "variants/linux-arm64": "a4382be8390960f2ed8fa08086c3dfe902afb2c54efb29aacdf5a08c026754b9"
+              "assets": "041feb7ec2f4cf338fe73ce8a19e9deffb25f1162c045fb8b70f1d1f570e02e7",
+              "root": "c5d97172bcc361edb62a0d62c0b087c49d396307ecebede3c61c2bee48ab2e57",
+              "variants": "d4cc027b252230d6c738aeb2792c76e7758b3759d774f511f90ba475c128f5fc",
+              "variants/darwin-arm64": "bbc3b2d0a62d9479e3d22030e6ea22da3c2889915b14c1d514d614884032e520",
+              "variants/linux-amd64": "48ef2498ff3c37b5680e2f249d4311346de9f3108c351ca649d42dbc94d165b8",
+              "variants/linux-arm64": "bbfccbcc6d791ce6524281a4097b23dceefef96dc1f140b8ca08f114ca4015fc"
             },
             "icon": "assets/icon.png",
             "main": {
@@ -39,16 +86,16 @@
             "manifestVersion": "0.6.0",
             "name": "scala",
             "type": "core",
-            "version": "0.11.0"
+            "version": "0.12.2"
           },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala-v0.12.2/scala-0.12.2.lgx"
+          ],
           "icon": {
             "path": "ec61e5bd8d2f52c73fafbd2e232312b344ad7fd5515450df305597dc6ad87568.png",
             "sha256": "ec61e5bd8d2f52c73fafbd2e232312b344ad7fd5515450df305597dc6ad87568",
             "size": 12132
-          },
-          "urls": [
-            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala-v0.11.0/scala-0.11.0.lgx"
-          ]
+          }
         }
       ]
     },
@@ -56,12 +103,12 @@
       "name": "scala_ui",
       "versions": [
         {
-          "releasedAt": "2026-10-07T10:04:53Z",
-          "publisherRef": "scala_ui-v0.10.0",
-          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala_ui-v0.10.0/scala_ui-0.10.0.lgx",
-          "size": 161769,
-          "sha256": "6a5815195c64ba2f77fcf8d04fa8615f8d5a70a9ed386f510976b5f778f4f9b1",
-          "rootHash": "bb4b66d074b5c1b40dce580de42961af81ef3d82adbaf521bf55382fd6ff9e99",
+          "releasedAt": "2026-10-10T18:28:01Z",
+          "publisherRef": "scala_ui-v0.12.1",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala_ui-v0.12.1/scala_ui-0.12.1.lgx",
+          "size": 186812,
+          "sha256": "e8c3775d6e7bd7efb2173b15ee224a739856c65360f32ee50ee2c2535c1dff8a",
+          "rootHash": "7e500a670579c8bd89f4f813bc4bb14a1dd95bad55da78cc726235cb7824d5e7",
           "manifest": {
             "author": "",
             "category": "general",
@@ -73,27 +120,189 @@
             "display_name": "Scala",
             "hashes": {
               "assets": "ec7137e8bc2833d69d7a19de9177aa3e7a903b6b77af4b84e029b9ad9f722236",
-              "root": "bb4b66d074b5c1b40dce580de42961af81ef3d82adbaf521bf55382fd6ff9e99",
-              "variants": "5362ebbe74fbdc23610979a3150157aab5e23612e24e4f6d1afee699624f59db",
-              "variants/darwin-arm64": "420d4239fbdecfbba4df50ec52e1b45e369e376c37f4b1583f4a40641fd8a979",
-              "variants/linux-amd64": "420d4239fbdecfbba4df50ec52e1b45e369e376c37f4b1583f4a40641fd8a979",
-              "variants/linux-arm64": "420d4239fbdecfbba4df50ec52e1b45e369e376c37f4b1583f4a40641fd8a979"
+              "root": "7e500a670579c8bd89f4f813bc4bb14a1dd95bad55da78cc726235cb7824d5e7",
+              "variants": "c811fdb50a3eaff936f12f46db0ac9b94746f2b2aaeeed04a472ced7a512c732",
+              "variants/darwin-arm64": "62f057daf78e36bf532179d3f17be585e41ea12a6093745027c952d435064f50",
+              "variants/linux-amd64": "62f057daf78e36bf532179d3f17be585e41ea12a6093745027c952d435064f50",
+              "variants/linux-arm64": "62f057daf78e36bf532179d3f17be585e41ea12a6093745027c952d435064f50"
             },
             "icon": "assets/icon.png",
             "main": {},
             "manifestVersion": "0.6.0",
             "name": "scala_ui",
+            "provides": [
+              {
+                "intent": "scala.calendars.list"
+              },
+              {
+                "intent": "scala.events.list"
+              },
+              {
+                "intent": "scala.events.search"
+              },
+              {
+                "intent": "scala.event.create"
+              },
+              {
+                "intent": "scala.calendar.create"
+              },
+              {
+                "intent": "scala.calendar.join"
+              },
+              {
+                "intent": "scala.calendar.share"
+              },
+              {
+                "intent": "scala.calendar.show"
+              }
+            ],
             "type": "ui_qml",
-            "version": "0.10.0",
+            "version": "0.12.1",
             "view": "qml/CalendarView.qml"
           },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala_ui-v0.12.1/scala_ui-0.12.1.lgx"
+          ],
           "icon": {
             "path": "ec61e5bd8d2f52c73fafbd2e232312b344ad7fd5515450df305597dc6ad87568.png",
             "sha256": "ec61e5bd8d2f52c73fafbd2e232312b344ad7fd5515450df305597dc6ad87568",
             "size": 12132
+          }
+        }
+      ]
+    },
+    {
+      "name": "kith",
+      "versions": [
+        {
+          "releasedAt": "2026-10-10T18:28:01Z",
+          "publisherRef": "kith-v0.3.2",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/kith-v0.3.2/kith-0.3.2.lgx",
+          "size": 12969577,
+          "sha256": "45d018fdd3df962ba14f2be6264797c1eeaa14b38167e5fae8bef2adf6d9fad7",
+          "rootHash": "96771dbefb2509679cfdc81d2f38e103fba867c6c7d1224230b43ea43f760b5c",
+          "manifest": {
+            "author": "",
+            "category": "general",
+            "dependencies": [
+              "loam_core"
+            ],
+            "description": "Contacts and address book module for Logos Core",
+            "display_name": "Kith Core",
+            "hashes": {
+              "assets": "77cd0bdd34f2e8a41ec5aef9bccd0afb30b32f499c0a027a7bf59d5e216dbc07",
+              "root": "96771dbefb2509679cfdc81d2f38e103fba867c6c7d1224230b43ea43f760b5c",
+              "variants": "dc79e780d233037276e6b596169857d7823a1d1aaf8322b47b1b5867494c5a83",
+              "variants/darwin-arm64": "c33740c3a84dabfbe2e7b96ae6a49daf414a1031aaef677a639272553369a887",
+              "variants/linux-amd64": "848b63f32ffbb5c453a3773ab60d9f3f92a6a83c55a7ba32c472b754d31a9c09",
+              "variants/linux-arm64": "da81f8e206a5ddfb1b072bfa5d852b2040040a1d69604d5e9338177f98ecda49"
+            },
+            "icon": "assets/icon.png",
+            "main": {
+              "darwin-arm64": "kith_plugin.dylib",
+              "linux-amd64": "kith_plugin.so",
+              "linux-arm64": "kith_plugin.so"
+            },
+            "manifestVersion": "0.6.0",
+            "name": "kith",
+            "type": "core",
+            "version": "0.3.2"
           },
           "urls": [
-            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/scala_ui-v0.10.0/scala_ui-0.10.0.lgx"
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/kith-v0.3.2/kith-0.3.2.lgx"
+          ],
+          "icon": {
+            "path": "1b46a7198969ff80d506ad32cd58f203c502cfc5ad49cf5996d5fb4e61a8926a.png",
+            "sha256": "1b46a7198969ff80d506ad32cd58f203c502cfc5ad49cf5996d5fb4e61a8926a",
+            "size": 32916
+          }
+        }
+      ]
+    },
+    {
+      "name": "kith_ui",
+      "versions": [
+        {
+          "releasedAt": "2026-10-07T10:21:09Z",
+          "publisherRef": "kith_ui-v0.3.0",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/kith_ui-v0.3.0/kith_ui-0.3.0.lgx",
+          "size": 176955,
+          "sha256": "bc4013ea5dc89a99c6f3f585e1dc6e8eefae2230031098eb8bd159681f91d87b",
+          "rootHash": "4e062b7e4c63adb2db092d0a60fd27ad3045d6b57be73b4acb298f3a7986a59f",
+          "manifest": {
+            "author": "",
+            "category": "general",
+            "dependencies": [
+              "kith",
+              "loam_core"
+            ],
+            "description": "Kith address book UI - pure-QML view over the kith core module",
+            "display_name": "Kith",
+            "hashes": {
+              "assets": "8bb5435fc5e15ca38bed30c22fe748fee27e2065f59f40d246f5e1f0d0442d57",
+              "root": "4e062b7e4c63adb2db092d0a60fd27ad3045d6b57be73b4acb298f3a7986a59f",
+              "variants": "cf7868b532b2268827898c45d7e0448a0aee2b681ea1e7ab64bb15cf498054c7",
+              "variants/darwin-arm64": "6cb75c0a1ca97594fc07d3383400289736db884798cefd8c72715252e203703a",
+              "variants/linux-amd64": "6cb75c0a1ca97594fc07d3383400289736db884798cefd8c72715252e203703a",
+              "variants/linux-arm64": "6cb75c0a1ca97594fc07d3383400289736db884798cefd8c72715252e203703a"
+            },
+            "icon": "assets/icon.png",
+            "main": {},
+            "manifestVersion": "0.6.0",
+            "name": "kith_ui",
+            "type": "ui_qml",
+            "version": "0.3.0",
+            "view": "qml/Main.qml"
+          },
+          "icon": {
+            "path": "1b46a7198969ff80d506ad32cd58f203c502cfc5ad49cf5996d5fb4e61a8926a.png",
+            "sha256": "1b46a7198969ff80d506ad32cd58f203c502cfc5ad49cf5996d5fb4e61a8926a",
+            "size": 32916
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/kith_ui-v0.3.0/kith_ui-0.3.0.lgx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "whisperbox_core",
+      "versions": [
+        {
+          "releasedAt": "2026-10-10T14:12:54Z",
+          "publisherRef": "whisperbox_core-v0.4.2",
+          "url": "https://github.com/vpavlin/logos-basecamp-modules/releases/download/whisperbox_core-v0.4.2/whisperbox_core-0.4.2.lgx",
+          "size": 13261384,
+          "sha256": "62c621319836b1825f1fe7e57a34d8b347ee646bbdedb6311f72e1e04e78b020",
+          "rootHash": "88152f553f9cc2bf0e9718dd13c6dff83a61cc4325c09a55b2ec7c54158292a9",
+          "manifest": {
+            "author": "",
+            "category": "social",
+            "dependencies": [
+              "loam_core"
+            ],
+            "description": "WhisperBox privacy-first forms core: append-only event log over one shared topic synced with loam_core (the Loam transport every Loam app shares), secp256k1 identity + ECIES response sealing to form creators, HLC-ordered CRDT merge with creator-view decryption. Runs headless under logosctl and behind the whisperbox ui_qml view (Basecamp 0.3).",
+            "hashes": {
+              "assets": "dcdfc0ad55d096e3dcad061b7bf2ce417c3568a9cd8826da9557b362ee62f77a",
+              "root": "88152f553f9cc2bf0e9718dd13c6dff83a61cc4325c09a55b2ec7c54158292a9",
+              "variants": "5346473efb7a0abefef5c4210d6b16839a3cb91cfc4e90e3b2e53b6e8e358ef6",
+              "variants/darwin-arm64": "6ba324d5abea485ad9209dc6ad89a32db596a005663abd0c8d9193d7ce2c86d6",
+              "variants/linux-amd64": "6acda4068f09947182ccf96b4085d48c7368016f308ec1ee4198c372be7f9973",
+              "variants/linux-arm64": "07fe09b7e103bed455c20cc3ee04eb8a0d98988516a0fc7db1978ef3214cdda6"
+            },
+            "icon": "",
+            "main": {
+              "darwin-arm64": "whisperbox_core_plugin.dylib",
+              "linux-amd64": "whisperbox_core_plugin.so",
+              "linux-arm64": "whisperbox_core_plugin.so"
+            },
+            "manifestVersion": "0.3.0",
+            "name": "whisperbox_core",
+            "type": "core",
+            "version": "0.4.2"
+          },
+          "urls": [
+            "https://github.com/vpavlin/logos-basecamp-modules/releases/download/whisperbox_core-v0.4.2/whisperbox_core-0.4.2.lgx"
           ]
         }
       ]

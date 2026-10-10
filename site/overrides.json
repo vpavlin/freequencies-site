@@ -11,15 +11,40 @@
     "website": "https://vpavlin.github.io/scala/"
   },
   "scala_ui": {
-    "featured": true,
+    "featured": false,
     "repo": "https://github.com/vpavlin/scala",
     "website": "https://vpavlin.github.io/scala/"
   },
   "xyz.vpavlin.scala": {
-    "featured": true,
+    "featured": false,
     "website": "https://vpavlin.github.io/scala/"
   },
   "loam_ui": {
     "repo": "https://github.com/vpavlin/loam-basecamp"
+  },
+  "frequencies_ui": {
+    "featured": true,
+    "repo": "https://github.com/vpavlin/frequencies",
+    "website": "https://frequencies.vpavlin.xyz/"
+  },
+  "xyz.vpavlin.frequencies": {
+    "featured": true,
+    "repo": "https://github.com/vpavlin/frequencies"
+  },
+  "kith": {
+    "repo": "https://github.com/vpavlin/kith"
+  },
+  "kith_ui": {
+    "repo": "https://github.com/vpavlin/kith"
+  },
+  "whisperbox_core": {
+    "repo": "https://github.com/vpavlin/whisperbox-logos"
+  },
+  "xyz.vpavlin.kith": {
+    "repo": "https://github.com/vpavlin/kith"
+  },
+  "xyz.vpavlin.loam": {
+    "repo": "https://github.com/vpavlin/logos-shared-delivery",
+    "website": "https://vpavlin.github.io/loam/"
   }
 }

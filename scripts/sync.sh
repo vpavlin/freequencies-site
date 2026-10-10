@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Refresh this repo from what is already published on apps.vpavlin.xyz, keeping
-# only Scala and the packages it needs. Run it after a Scala release, commit,
-# push; the site workflow rebuilds frequencies.vpavlin.xyz.
+# only Scala, Frequencies and the packages they need. Run it after a Scala or
+# Frequencies release, commit, push; the site workflow rebuilds frequencies.vpavlin.xyz.
 #
 # Nothing large is stored here:
 #   - basecamp/index.json lists the Scala chain from the apps catalog, with
@@ -26,8 +26,8 @@ curl -fsSL "$CATALOG_URL" -o /tmp/freq-catalog.json
 python3 - /tmp/freq-catalog.json basecamp/index.json <<'PY'
 import json, sys
 src, dst = sys.argv[1:]
-CHAIN = ["scala", "scala_ui", "loam_core", "loam_ui", "delivery_module", "ble_mesh",
-         "keycard", "keycard-ui", "storage_module"]
+CHAIN = ["frequencies_ui", "scala", "scala_ui", "kith", "kith_ui", "whisperbox_core",
+         "loam_core", "loam_ui", "delivery_module", "ble_mesh", "keycard", "keycard-ui", "storage_module"]
 cat = json.load(open(src))
 pkgs = {p["name"]: p for p in cat["packages"]}
 out = []
@@ -41,7 +41,7 @@ names = {p["name"] for p in out}
 for p in out:                                  # every dependency must be in this repo too
     for dep in p["versions"][0]["manifest"].get("dependencies") or []:
         if dep not in names:
-            sys.exit(f"{p['name']} depends on {dep}, which is not in the Scala chain")
+            sys.exit(f"{p['name']} depends on {dep}, which is not in this repo's chain")
 idx = {k: v for k, v in cat.items() if k != "packages"}
 idx["repositoryName"] = "frequencies"
 idx["packages"] = out
@@ -50,11 +50,17 @@ for p in out:
     print(f"  basecamp: {p['name']} {p['versions'][0]['manifest']['version']}")
 PY
 
-# ── F-Droid: newest $KEEP Scala APKs, signed index, APKs not committed ─────
-mapfile -t APKS < <(ls -t "$APPS_FDROID"/repo/scala-*.apk | head -n "$KEEP")
-find "$FREQ_FDROID/repo" -maxdepth 1 -name 'scala-*.apk' -delete
-cp "${APKS[@]}" "$FREQ_FDROID/repo/"
-cp -r "$APPS_FDROID/metadata/xyz.vpavlin.scala.yml" "$FREQ_FDROID/metadata/"
+# ── F-Droid: newest $KEEP APKs of each app, signed index, APKs not committed ─
+# Frequencies and Scala, plus Loam (both need it on the phone) and Kith (the artists' address book).
+for app in frequencies:xyz.vpavlin.frequencies scala:xyz.vpavlin.scala loam:xyz.vpavlin.loam kith:xyz.vpavlin.kith; do
+  file=${app%%:*}; pkg=${app#*:}
+  mapfile -t APKS < <(ls -t "$APPS_FDROID"/repo/"$file"-*.apk 2>/dev/null | head -n "$KEEP")
+  [ "${#APKS[@]}" -gt 0 ] || { echo "no $file APK on apps.vpavlin.xyz" >&2; exit 1; }
+  find "$FREQ_FDROID/repo" -maxdepth 1 -name "$file-*.apk" -delete
+  cp "${APKS[@]}" "$FREQ_FDROID/repo/"
+  cp "$APPS_FDROID/metadata/$pkg.yml" "$FREQ_FDROID/metadata/"
+  [ -d "$APPS_FDROID/metadata/$pkg" ] && cp -r "$APPS_FDROID/metadata/$pkg" "$FREQ_FDROID/metadata/"
+done
 (cd "$FREQ_FDROID" && ANDROID_HOME="${ANDROID_HOME:-$HOME/Android/Sdk}" \
     "${FDROID_BIN:-$HOME/fdroid-venv/bin/fdroid}" update 2>&1 | grep -iE "error|critical" | grep -v repo_icon || true)
 rm -rf fdroid/repo && mkdir -p fdroid
@@ -62,5 +68,6 @@ rsync -a --checksum --exclude '*.apk' --exclude 'status' "$FREQ_FDROID/repo/" fd
 python3 -c '
 import json
 d = json.load(open("fdroid/repo/index-v2.json"))
-for v in d["packages"]["xyz.vpavlin.scala"]["versions"].values():
-    print("  fdroid:", v["manifest"]["versionName"], v["file"]["name"])'
+for pkg, p in d["packages"].items():
+    for v in p["versions"].values():
+        print("  fdroid:", pkg, v["manifest"]["versionName"], v["file"]["name"])'
