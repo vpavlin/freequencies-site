@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Refresh this repo from what is already published on apps.vpavlin.xyz, keeping
 # only Scala, Freequencies and the packages they need. Run it after a Scala or
-# Freequencies release, commit, push; the site workflow rebuilds frequencies.vpavlin.xyz.
+# Freequencies release, commit, push; the site workflow rebuilds freequencies.vpavlin.xyz.
 #
 # Nothing large is stored here:
 #   - basecamp/index.json lists the Scala chain from the apps catalog, with

@@ -1,6 +1,6 @@
 name: Build site
 
-# frequencies.vpavlin.xyz: Scala only, for Android (F-Droid) and Basecamp.
+# freequencies.vpavlin.xyz: Scala only, for Android (F-Droid) and Basecamp.
 # basecamp/index.json and fdroid/repo come from scripts/sync.sh. The Basecamp
 # packages are downloaded by Basecamp straight from their GitHub release assets;
 # the APKs are copied here from apps.vpavlin.xyz and checked against the signed
@@ -63,8 +63,8 @@ jobs:
           python3 site/gen_modules_page.py \
             --index basecamp/index.json \
             --fdroid-index fdroid/repo/index-v2.json \
-            --fdroid-base  https://frequencies.vpavlin.xyz/fdroid/repo \
-            --fdroid-repo-url "https://frequencies.vpavlin.xyz/fdroid/repo?fingerprint=$FP" \
+            --fdroid-base  https://freequencies.vpavlin.xyz/fdroid/repo \
+            --fdroid-repo-url "https://freequencies.vpavlin.xyz/fdroid/repo?fingerprint=$FP" \
             --overrides site/overrides.json \
             --out dist/index.html
           cp CNAME dist/CNAME

@@ -20,8 +20,8 @@ homepage), merged over the auto-loaded data.
 
 Usage:
     gen_modules_page.py --index index.json \
-        --fdroid-index https://frequencies.vpavlin.xyz/fdroid/repo/index-v2.json \
-        --fdroid-base  https://frequencies.vpavlin.xyz/fdroid/repo \
+        --fdroid-index https://freequencies.vpavlin.xyz/fdroid/repo/index-v2.json \
+        --fdroid-base  https://freequencies.vpavlin.xyz/fdroid/repo \
         --out dist/index.html
     # local fixtures / offline:
     gen_modules_page.py --index site/testdata/sample-index.json --offline --out /tmp/p.html
@@ -29,7 +29,7 @@ Usage:
 import argparse, base64, html, io, json, os, sys, tarfile, urllib.request
 
 CATALOG_TITLE = "Freequencies"
-BASECAMP_REPO_URL = "https://frequencies.vpavlin.xyz/logos-repo.json"  # paste into Basecamp
+BASECAMP_REPO_URL = "https://freequencies.vpavlin.xyz/logos-repo.json"  # paste into Basecamp
 BASECAMP_INSTALL_URL = "https://docs.logos.co/basecamp/install-logos-basecamp"  # install guide
 FDROID_INSTALL_URL = "https://f-droid.org"     # where to get the F-Droid client
 CACHE_DIR = os.path.expanduser("~/.cache/logos-catalog-icons")

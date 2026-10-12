@@ -1,11 +1,11 @@
 # Freequencies
 
-The source of [frequencies.vpavlin.xyz](https://frequencies.vpavlin.xyz): **Freequencies**, event
+The source of [freequencies.vpavlin.xyz](https://freequencies.vpavlin.xyz): **Freequencies**, event
 organisation for the club scene, and **Scala**, the local-first shared calendar it is built on, for
 Android and Basecamp. It is a cut of [apps.vpavlin.xyz](https://apps.vpavlin.xyz) holding just these
 apps and what they need (Kith for artists, WhisperBox's core for forms, Loam).
 
-- **Basecamp:** add `https://frequencies.vpavlin.xyz/logos-repo.json` as a package repository.
+- **Basecamp:** add `https://freequencies.vpavlin.xyz/logos-repo.json` as a package repository.
   It lists Freequencies, Scala and the modules they need (newest version of each); the packages themselves
   are downloaded from their GitHub release assets.
 - **Android:** add the F-Droid repo linked on the page. It holds Freequencies, Scala, Loam and Kith, and is signed with
