@@ -22,14 +22,14 @@
   "loam_ui": {
     "repo": "https://github.com/vpavlin/loam-basecamp"
   },
-  "frequencies_ui": {
+  "freequencies_ui": {
     "featured": true,
-    "repo": "https://github.com/vpavlin/frequencies",
+    "repo": "https://github.com/vpavlin/freequencies",
     "website": "https://frequencies.vpavlin.xyz/"
   },
-  "xyz.vpavlin.frequencies": {
+  "xyz.vpavlin.freequencies": {
     "featured": true,
-    "repo": "https://github.com/vpavlin/frequencies"
+    "repo": "https://github.com/vpavlin/freequencies"
   },
   "kith": {
     "repo": "https://github.com/vpavlin/kith"

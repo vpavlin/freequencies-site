@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "name": "frequencies",
-  "displayName": "Frequencies",
+  "name": "freequencies",
+  "displayName": "Freequencies",
   "description": "Scala, the local-first shared calendar, and the modules it needs.",
   "homepage": "https://frequencies.vpavlin.xyz/",
   "indexUrl": "https://frequencies.vpavlin.xyz/basecamp/index.json",
